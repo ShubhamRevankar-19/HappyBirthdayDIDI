@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday Didi ❤️</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+<canvas id="confetti"></canvas>
+<div id="floaters"></div>
+
+<!-- MUSIC: put your song at assets/birthday-music.mp3 -->
+<audio id="music" src="assets/birthday-music.mp3" loop preload="none"></audio>
+<button id="musicBtn" aria-label="Toggle music">🎵</button>
+
+<!-- HERO -->
+<header class="hero">
+  <h1 class="script">Happy Birthday Didi ❤️</h1>
+  <p class="sub">To the most special sister in my life...</p>
+  <div class="cake" aria-hidden="true">
+    <div class="flame f1"></div><div class="flame f2"></div><div class="flame f3"></div>
+    <div class="candle c1"></div><div class="candle c2"></div><div class="candle c3"></div>
+    <div class="tier t3"></div><div class="tier t2"></div><div class="tier t1"></div>
+    <div class="plate"></div>
+  </div>
+  <button class="btn" id="openBtn">Open Your Surprise 🎁</button>
+</header>
+
+<main id="content" class="hidden">
+
+  <!-- MESSAGE: edit the text below to change the message -->
+  <section class="reveal">
+    <h2 class="script">A Special Message For You 💖</h2>
+    <div class="card message">
+      <p>Happy Birthday to the most amazing Didi! ❤️<br>
+      Thank you for always being there, for your love, care, support, and for making life more beautiful. You are not just my sister, but also someone very special to me.</p>
+      <p>May your life always be filled with happiness, success, love, laughter and beautiful memories. Keep smiling, keep shining and always stay the wonderful person you are.</p>
+      <p class="sign">Happy Birthday Didi! 🎂❤️<br>Love you always! 💕</p>
+    </div>
+  </section>
+
+  <!-- VIDEO: replace assets/birthday-video.mp4 (same name) with your video.
+       Optional cover image: assets/video-poster.jpg -->
+  <section class="reveal">
+    <h2 class="script">A Little Video Just For You 🎬❤️</h2>
+    <div class="card videobox" id="videoBox">
+      <video id="video" controls playsinline preload="metadata" poster="assets/video-poster.jpg">
+        <source src="assets/birthday-video.mp4" type="video/mp4">
+      </video>
+      <button class="poster" id="videoPoster" aria-label="Play video">
+        <span class="play">▶</span>
+        <span class="ptext">Your Birthday Video Goes Here ❤️</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- PHOTOS: replace assets/photo1.jpg ... photo6.jpg with your photos (same names) -->
+  <section class="reveal">
+    <h2 class="script">Beautiful Memories 📸</h2>
+    <div class="gallery">
+      <figure><img src="assets/photo1.jpg" alt="Memory 1"><figcaption>photo1.jpg</figcaption></figure>
+      <figure><img src="assets/photo2.jpg" alt="Memory 2"><figcaption>photo2.jpg</figcaption></figure>
+      <figure><img src="assets/photo3.jpg" alt="Memory 3"><figcaption>photo3.jpg</figcaption></figure>
+      <figure><img src="assets/photo4.jpg" alt="Memory 4"><figcaption>photo4.jpg</figcaption></figure>
+      <figure><img src="assets/photo5.jpg" alt="Memory 5"><figcaption>photo5.jpg</figcaption></figure>
+      <figure><img src="assets/photo6.jpg" alt="Memory 6"><figcaption>photo6.jpg</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- REASONS -->
+  <section class="reveal">
+    <h2 class="script">Why You Are Special 💕</h2>
+    <div class="reasons">
+      <div class="card r"><span>❤️</span>Always Caring</div>
+      <div class="card r"><span>🌸</span>Always Supportive</div>
+      <div class="card r"><span>😊</span>Always Making Us Smile</div>
+      <div class="card r"><span>✨</span>Always Inspiring</div>
+      <div class="card r"><span>🤗</span>Always There For Me</div>
+      <div class="card r"><span>👑</span>The Best Didi Ever</div>
+    </div>
+  </section>
+
+  <!-- FINAL SURPRISE -->
+  <section class="reveal final">
+    <h2 class="script">One Last Surprise 🎁</h2>
+    <div class="gift" id="gift" aria-hidden="true">
+      <div class="lid"></div><div class="box"></div>
+      <div class="glow">✨</div>
+    </div>
+    <button class="btn" id="giftBtn">Open Your Gift ❤️</button>
+    <div class="card finalmsg" id="finalMsg">
+      <p class="big script">Once again, Happy Birthday Didi! 🎂❤️</p>
+      <p>You deserve all the happiness in the world.<br>Keep smiling and keep shining! ✨<br>Love you forever! ❤️</p>
+    </div>
+  </section>
+</main>
+
+<div id="lightbox" hidden><img alt=""><button aria-label="Close">✕</button></div>
+<script src="js/script.js"></script>
+</body>
+</html>
